@@ -1,4 +1,4 @@
-def cashierAlgorithm(self, cents, denominations):
+def cashierAlgorithm(cents, denominations):
     """Takes an integer number of cents and returns the corresponding denominations according to the greedy cashier's algorithm
     Denominations argument must be a list of tuples with the following data:(String "Denomination Name", integer centValue)
     """

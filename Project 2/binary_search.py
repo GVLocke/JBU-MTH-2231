@@ -1,4 +1,4 @@
-def binary_search(self, list, target):
+def binary_search(list, target):
     """Takes an ordered list of n integers and determines the position of an integer using a binary search.
     returns -1 if the target is not found."""
     for i, x in enumerate(list):

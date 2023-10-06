@@ -1,4 +1,4 @@
-def bubblesort(self, list):
+def bubblesort(list):
     """Takes in a list of n integers and sorts them using the bubblesort algorithm."""
     for i in reversed(range(len(list))):
         for j in range(i):

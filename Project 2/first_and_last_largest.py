@@ -1,4 +1,4 @@
-def firstAndLastLargest(self, list):
+def firstAndLastLargest(list):
     """Takes a list of n integers and determines the first and last occurence of the largest element in the list."""
     max_value = max(list)
     occurrences = [i for i, x in enumerate(list) if x == max_value]
