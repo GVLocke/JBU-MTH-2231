@@ -1,24 +1,22 @@
-class Solution(object):
-    def cashierAlgorithm(self, cents, denominations):
-        """Takes an integer number of cents and returns the corresponding denominations according to the greedy cashier's algorithm
-        Denominations argument must be a list of tuples with the following data:(String "Denomination Name", integer centValue)
-        """
-        for (
-            coin,
-            value,
-        ) in (
-            denominations
-        ):  # iterate through coins storing the string of each tuple as coin and the integer as value
-            count = cents // value  # set count to equal the integer part of cents/value
-            if count > 0:
-                print(f"{coin}: {count}")  # print the number of coins
-                cents -= (
-                    count * value
-                )  # remove the correct number of cents from the total cents
+def cashierAlgorithm(self, cents, denominations):
+    """Takes an integer number of cents and returns the corresponding denominations according to the greedy cashier's algorithm
+    Denominations argument must be a list of tuples with the following data:(String "Denomination Name", integer centValue)
+    """
+    for (
+        coin,
+        value,
+    ) in (
+        denominations
+    ):  # iterate through coins storing the string of each tuple as coin and the integer as value
+        count = cents // value  # set count to equal the integer part of cents/value
+        if count > 0:
+            print(f"{coin}: {count}")  # print the number of coins
+            cents -= (
+                count * value
+            )  # remove the correct number of cents from the total cents
 
 
 # test code
-test = Solution()
 print("Select denominations to use or type 0 to continue: ")
 options = [
     ("Pennies", 1),
@@ -47,4 +45,4 @@ dollars, cents = dollars_cents.split(".")
 cents = int(cents)
 dollars = int(dollars)
 total_cents = dollars * 100 + cents
-test.cashierAlgorithm(total_cents, reversed(selected_denominations))
+cashierAlgorithm(total_cents, reversed(selected_denominations))
