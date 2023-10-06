@@ -46,18 +46,38 @@ def numberInLocalSquare(board, target_square, target_value):
     return False
 
 
+def print_board(board):
+    for i in range(len(board)):
+        if i % 3 == 0 and i != 0:
+            print("------+-------+------")
+        for j in range(len(board[i])):
+            if j % 3 == 0 and j != 0:
+                print("| ", end="")
+            print(int(board[i][j]), end=" ")
+        print("  " + str(i))
+    print()
+    print("0 1 2 | 3 4 5 | 6 7 8")
+
+
+inp = input()  # reads in the board
+inp_strip = inp.strip("(),[] ")  # removes brackets or parantheses and spaces
 myBoard = [
-    [5, 3, 4, 6, 7, 8, 9, 1, 2],
-    [6, 7, 2, 1, 9, 5, 3, 4, 8],
-    [1, 9, 8, 3, 4, 2, 5, 6, 7],
-    #   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    [8, 5, 9, 7, 6, 1, 4, 2, 3],
-    [4, 2, 6, 8, 5, 3, 7, 9, 1],
-    [7, 1, 3, 9, 2, 4, 8, 5, 6],
-    #   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    [0, 6, 1, 5, 3, 7, 2, 8, 4],
-    [2, 8, 7, 4, 1, 9, 6, 3, 5],
-    [3, 4, 5, 2, 8, 6, 1, 7, 9],
-]
-print(numberInColumn(myBoard, 0, 9))
-print(numberInLocalSquare(myBoard, 4, 2))
+    list(map(float, t.split(","))) for t in inp_strip.split(";")
+]  # creates a board for input
+
+# print the board
+print_board(myBoard)
+
+target = int(input("Enter a number to search for (0-8): "))
+target_column = int(input("Enter a column to search in (0-8): "))
+target_square = int(input("Enter a local square to search in (0-8): "))
+
+if numberInColumn(myBoard, target_column, target):
+    print(f"{target} is in column {target_column}.")
+else:
+    print(f"{target} is not in column {target_column}.")
+
+if numberInLocalSquare(myBoard, target_square, target):
+    print(f"{target} is in local square {target_square}.")
+else:
+    print(f"{target} is not in local square {target_square}.")
