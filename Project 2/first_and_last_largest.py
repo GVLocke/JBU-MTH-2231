@@ -4,7 +4,8 @@ class Solution(object):
         max_value = max(list)
         occurrences = [i for i, x in enumerate(list) if x == max_value]
         return [min(occurrences), max(occurrences)]
-    
+
+
 # test code
 test = Solution()
 mylist = [1, 2, 3, 4, 3, 4, 1, 4]

@@ -9,6 +9,7 @@ def solve_puzzle_1():
                 solutions.append((a_knight, b_knight))
     return solutions
 
+
 def solve_puzzle_2():
     solutions = []
     for a_knight in [False, True]:
@@ -21,6 +22,7 @@ def solve_puzzle_2():
             solutions.append((a_knight, b_knight))
     return solutions
 
+
 # this one doesn't work. I'm not sure why
 def solve_puzzle_3():
     solutions = []
@@ -30,9 +32,15 @@ def solve_puzzle_3():
             a_says = (a_knight, b_knight)
             b_says = (b_knight, b_knight)
 
-            if a_says[0] == a_knight and a_says[1] == b_knight and b_says[0] == b_knight and b_says[1] == b_knight:
+            if (
+                a_says[0] == a_knight
+                and a_says[1] == b_knight
+                and b_says[0] == b_knight
+                and b_says[1] == b_knight
+            ):
                 solutions.append((a_knight, b_knight))
     return solutions
+
 
 # Solve Puzzle 1
 solutions_1 = solve_puzzle_1()

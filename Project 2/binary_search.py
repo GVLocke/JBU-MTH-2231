@@ -7,9 +7,10 @@ class Solution(object):
                 return i
         return -1
 
+
 # test code
 test = Solution()
-mylist = [1,2,3,5,8,13,21,34,55,89]
+mylist = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 result = test.binary_search(mylist, 55)
 if result == -1:
     print("Target not found.")
