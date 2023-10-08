@@ -12,5 +12,7 @@ This repo contains the programs that I write for my Discrete Mathematics Course 
 - `first_and_last_largest.py` takes a list of n integerns and determines the first and last occurence of the largest element in the list.
 - `greedy_cashier_algorithm.py` takes an integer number of cents and returns the corresponding denominations according to the greedy cashier's algorithm.
 
+# Tests
+- `baseconversion.py` is an algorithm that converts a base 10 integer into a number of any integer base greater than 1.
 
 
