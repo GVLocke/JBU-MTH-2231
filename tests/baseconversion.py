@@ -9,4 +9,6 @@ def baseconversion(number, base):
     return int("".join([str(i) for i in reversed(result)]))
 
 
-print(baseconversion(12345, 8))
+number = int(input("Enter an integer: "))
+base = int(input("Enter a base: "))
+print(baseconversion(number, base))
