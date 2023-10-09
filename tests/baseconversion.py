@@ -5,8 +5,11 @@ def baseconversion(number, base):
     while quotient > 0:
         remainder = quotient % base
         quotient = quotient // base
-        result.append(remainder)
-    return int("".join([str(i) for i in reversed(result)]))
+        if remainder >= 10:
+            result.append(chr(ord("A") + remainder - 10))
+        else:
+            result.append(remainder)
+    return "".join([str(i) for i in reversed(result)])
 
 
 number = int(input("Enter an integer: "))
