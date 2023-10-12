@@ -14,5 +14,5 @@ This repo contains the programs that I write for my Discrete Mathematics Course 
 
 # Tests
 - `baseconversion.py` is an algorithm that converts a base 10 integer into a number of any integer base greater than 1.
-
+- `isitprime.py` is a program that determines the primality of an integer using the sieve of Eratosthenes
 
