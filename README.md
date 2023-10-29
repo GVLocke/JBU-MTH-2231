@@ -12,6 +12,15 @@ This repo contains the programs that I write for my Discrete Mathematics Course 
 - `first_and_last_largest.py` takes a list of n integerns and determines the first and last occurence of the largest element in the list.
 - `greedy_cashier_algorithm.py` takes an integer number of cents and returns the corresponding denominations according to the greedy cashier's algorithm.
 
+# Project 3
+- `affine_cipher.py` includes functions to encrypt and decrypt a plain text message using the affine cipher.
+- `bezout_coefficients.py` is a recursive implementation of the extended euclidean algorithm.
+- `gcd.py` is a recursive implementation of the euclidean algorithm.
+- `is_number_valid_in_row.py` is a function that checks the validity of a solution set for a row of a sudoku puzzle
+- `rsa_encrypt.py` does what it sounds like it does.
+- `rsa_decrypt.py` also does what it sounds like it does.
+- `td_prime_factorization.py` uses the trial division algorithm to find the prime factors of a number. 
+
 # Tests
 - `baseconversion.py` is an algorithm that converts a base 10 integer into a number of any integer base greater than 1.
 - `isitprime.py` is a program that determines the primality of an integer using the sieve of Eratosthenes
