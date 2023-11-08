@@ -8,7 +8,7 @@ def nth_fibonacci(n):
 
 
 if __name__ == "__main__":
-    print("This program computes the nth term of the Fibonacci sequence.")
+    print("This program finds the nth term of the Fibonacci sequence.")
     n = int(input("Enter an integer for n: "))
     if n < 0:
         print("n must be nonnegative.")
