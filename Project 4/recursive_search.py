@@ -11,7 +11,9 @@ def recursive_search(search_term, list, i=0):
 
 
 if __name__ == "__main__":
-    print("This program checks if an element is in a list.")
+    print(
+        "This program checks if an element is in a list. The list is a randomly generated list of 10 integers from 1 to 20."
+    )
     my_list = random.sample(range(1, 21), 10)
     search_term = int(input("Enter an integer to search for: "))
     result = recursive_search(search_term, my_list)
