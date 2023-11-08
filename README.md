@@ -21,6 +21,12 @@ This repo contains the programs that I write for my Discrete Mathematics Course 
 - `rsa_decrypt.py` also does what it sounds like it does.
 - `td_prime_factorization.py` uses the trial division algorithm to find the prime factors of a number. 
 
+# Project 4
+- `recursive_a^2^n.py` uses a recursive algorithm to compute a^2^n.
+- `recursive_fibonacci.py` uses a recursive algorithm to find the nth term of the fibonacci sequence.
+- `recursive_search.py` is a recursive binary search algorithm.
+- Project 4 also requested a recursive gcd algorithm, but I already wrote that for project 3.
+
 # Tests
 - `baseconversion.py` is an algorithm that converts a base 10 integer into a number of any integer base greater than 1.
 - `isitprime.py` is a program that determines the primality of an integer using the sieve of Eratosthenes
