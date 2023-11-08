@@ -5,4 +5,4 @@ def gcd(m, n):
 if __name__ == "__main__":
     m = int(input("Enter an integer: "))
     n = int(input("Enter another integer: "))
-    print(gcd(m, n))
+    print(f"The gcd of {m} and {n} is {gcd(m, n)}")
