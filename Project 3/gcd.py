@@ -3,10 +3,6 @@ def gcd(m, n):
 
 
 if __name__ == "__main__":
-    bigger_integer = int(input("Enter an integer: "))
-    smaller_integer = int(input("Enter another integer: "))
-    # if bigger_integer < smaller_integer:
-    #     temp = smaller_integer
-    #     smaller_integer = bigger_integer
-    #     bigger_integer = temp
-    print(gcd(bigger_integer, smaller_integer))
+    m = int(input("Enter an integer: "))
+    n = int(input("Enter another integer: "))
+    print(gcd(m, n))
