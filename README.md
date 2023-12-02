@@ -27,6 +27,12 @@ This repo contains the programs that I write for my Discrete Mathematics Course 
 - `recursive_search.py` is a recursive binary search algorithm.
 - Project 4 also requested a recursive gcd algorithm, but I already wrote that for project 3.
 
+# Project 5
+- `inclusion_exclusion.py` is a barebones implementation of the inclusion-exclusion principle.
+- `no_consecutive_zeros.py` is a function that returns the number of binary strings of length n that do not contain consecutive zeros.
+- `number7.py` implements a particular recurrence relation.
+- `sudoku.py` is the complete sudoku solver.
+
 # Tests
 - `baseconversion.py` is an algorithm that converts a base 10 integer into a number of any integer base greater than 1.
 - `isitprime.py` is a program that determines the primality of an integer using the sieve of Eratosthenes
